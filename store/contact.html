@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    :root {
+      --primary-color: #d45a42;
+      --text-dark: #2c2c2c;
+      --text-muted: #666;
+      --bg-light: #fafafa;
+    }
+
+    body {
+      font-family: "Inter", "Segoe UI", Tahoma, sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+    }
+
+    /* Banner */
+    .banner {
+      background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url("https://images.unsplash.com/photo-1516387938699-a93567ec168e?auto=format&fit=crop&w=1500&q=80");
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 6rem 1rem;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .banner h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+
+    .banner p {
+      font-size: 1.15rem;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.7;
+      color: #eee;
+    }
+
+    /* Contact box */
+    .contact-container {
+      background: #fff;
+      border-radius: 12px;
+      padding: 2.5rem;
+      max-width: 950px;
+      margin: 0 auto 4rem;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    /* Form */
+    .form-label {
+      font-weight: 600;
+      color: var(--text-dark);
+      margin-bottom: 0.4rem;
+    }
+
+    .form-control {
+      border-radius: 6px;
+      padding: 0.7rem;
+      border: 1px solid #ddd;
+      transition: border-color 0.2s ease;
+    }
+
+    .form-control:focus {
+      border-color: var(--primary-color);
+      box-shadow: none;
+    }
+
+    .btn-primary {
+      background-color: var(--primary-color);
+      border: none;
+      padding: 0.7rem 1.6rem;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: #b94734;
+      transform: translateY(-2px);
+    }
+
+    /* Contact info */
+    .contact-info {
+      background: #fdfdfd;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      padding: 1.8rem;
+    }
+
+    .info-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.2rem;
+    }
+
+    .info-icon {
+      flex-shrink: 0;
+      background: #f2f2f2;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary-color);
+      font-size: 1.2rem;
+      margin-right: 0.9rem;
+    }
+
+    .info-content h5 {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .info-content p {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    /* Success message */
+    .success-message {
+      display: none;
+      background: #f1faf3;
+      border: 1px solid #cfe9d6;
+      color: #2c6e3f;
+      padding: 0.9rem;
+      border-radius: 6px;
+      margin-top: 1rem;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      .banner h1 {
+        font-size: 2rem;
+      }
+
+      .banner p {
+        font-size: 1rem;
+      }
+
+      .contact-container {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Banner -->
+  <section class="banner">
+    <h1>Get In Touch With Us</h1>
+    <p>We're here to answer your questions and provide the support you need. Send us a message and we'll get back to you soon.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <div class="contact-container">
+    <div class="row g-4">
+      <!-- Form -->
+      <div class="col-lg-8">
+        <form id="contactForm" class="needs-validation" novalidate>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address *</label>
+            <input type="email" class="form-control" id="email" required>
+            <div class="invalid-feedback">Please provide a valid email address.</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="phone" pattern="[0-9+\-\s()]*">
+            <div class="invalid-feedback">Please provide a valid phone number.</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label">Message *</label>
+            <textarea class="form-control" id="message" rows="5" required></textarea>
+            <div class="invalid-feedback">Please enter your message.</div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">
+            <i class="fas fa-paper-plane me-2"></i>Send Message
+          </button>
+
+          <div class="success-message" id="successMessage">
+            <i class="fas fa-check-circle me-2"></i> Thank you! We'll get back to you soon.
+          </div>
+        </form>
+      </div>
+
+      <!-- Info -->
+      <div class="col-lg-4">
+        <div class="contact-info">
+          <h5 class="mb-3">Contact Information</h5>
+          <div class="info-item">
+            <div class="info-icon"><i class="fas fa-phone"></i></div>
+            <div class="info-content">
+              <h5>Phone</h5>
+              <p>+1 (555) 123-4567</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+            <div class="info-content">
+              <h5>Email</h5>
+              <p>info@yourcompany.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Validation Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const form = document.getElementById('contactForm');
+      const successMessage = document.getElementById('successMessage');
+      const phoneInput = document.getElementById('phone');
+
+      phoneInput.addEventListener('input', function () {
+        this.value = this.value.replace(/[^0-9+\-\s()]/g, '');
+      });
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        if (!form.checkValidity()) {
+          event.stopPropagation();
+          form.classList.add('was-validated');
+          return;
+        }
+        successMessage.style.display = 'block';
+        form.reset();
+        form.classList.remove('was-validated');
+        setTimeout(() => { successMessage.style.display = 'none'; }, 5000);
+      });
+    });
+  </script>
+</body>
+
+</html>
