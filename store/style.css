@@ -326,10 +326,10 @@ body {
       background: linear-gradient(180deg, #99de23 0%, #75bc12 100%);
       color: #fff;
       font-weight: bold;
-      font-size: 15px;
+      font-size: 12px;
       border: none;
       border-radius: 30px;
-      padding: 12px 36px 12px 56px;
+      padding: 10px 23px;
       box-shadow: 0 2px 8px 0 #e1f7b3;
       outline: none;
       cursor: pointer;
@@ -337,27 +337,11 @@ body {
       transition: background 0.18s;
       display: inline-flex;
       align-items: center;
+      gap:10px;
     }
     .get-coupon-btn:hover, .get-coupon-btn:focus {
       background: linear-gradient(180deg, #7dc300 0%, #5d9900 100%);
       color: #fff;
-    }
-    .get-coupon-btn .btn-icon {
-      position: absolute;
-      left: 16px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 32px;
-      height: 32px;
-      background: rgba(255,255,255,0.08);
-      border-radius: 50%;
-    }
-    /* SVG icon styling */
-    .get-coupon-btn .btn-icon svg {
-      width: 21px;
-      height: 21px;
-      display: block;
     }
     @media (max-width: 767px) {
       .coupon-card {
