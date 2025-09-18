@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Custom CSS -->
+<link rel="stylesheet" href="style.css" />
+  <?php include 'header.php'; ?>
+
     <link rel="stylesheet" href="about.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
-</head>
-<body>
+
      <div class="header-hero position-relative">
         <div class="container">
             <div class="row align-items-center gy-3">
@@ -42,5 +35,4 @@
             </div>
         </div>
     </div>
-</body>
-</html>
+<?php include 'footer.php'; ?>
