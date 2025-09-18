@@ -90,25 +90,6 @@
       }
     }
 
-    /* Footer */
-    footer {
-      /* text-align: center; */
-      padding: 20px 0;
-      background: #f6f6f6;
-      /* white footer background */
-
-      margin-top: 50px;
-    }
-
-    footer a {
-      color: #000;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      color: #ea6a4f;
-      /* brighter red on hover */
-    }
   </style>
 </head>
 
@@ -151,44 +132,7 @@
     </nav>
   </header>
 
-  <!-- Main Content -->
-  <main class="container my-5">
-    <h1 class="text-center mb-4">Welcome to My Unique Coupon Page</h1>
-    <p class="text-center">Use the filters and search above to find amazing coupons!</p>
-  </main>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="row text-start text-md-center">
-        <div class="col-12 col-md-4 mb-3">
-          <h5 class="fw-bold">MySite</h5>
-          <p>Delivering the best coupons and deals for you every day.</p>
-        </div>
-        <div class="col-12 col-md-4 mb-3">
-          <h5 class="fw-bold">Quick Links</h5>
-          <ul class="list-unstyled ps-0">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-          </ul>
-        </div>
-        <div class="col-12 col-md-4 mb-3">
-          <h5 class="fw-bold">Follow Us</h5>
-          <a href="#" class="me-3 fs-5"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="me-3 fs-5"><i class="bi bi-twitter"></i></a>
-          <a href="#" class="me-3 fs-5"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="fs-5"><i class="bi bi-linkedin"></i></a>
-        </div>
-      </div>
-      <hr>
-      <div class="text-start text-md-center small">
-        &copy; 2025 MySite. All rights reserved.
-      </div>
-    </div>
-  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
