@@ -1,137 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy | Your Website</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css" />
-    <style>
-        :root {
-            --primary-color: #ea6a4f;
-            --primary-light: #ffd6ce;
-            --dark-color: #333;
-            --light-bg: #f9f9f9;
-        }
-
-        body {
-            background-color: var(--light-bg);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #444;
-            line-height: 1.6;
-        }
-
-        .privacy-container {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-            padding: 2rem;
-            margin: 3rem auto;
-            max-width: 900px;
-            /* border-top: 5px solid var(--primary-color); */
-        }
-
-        .privacy-header {
-            text-align: center;
-            margin-bottom: 2.5rem;
-            padding-bottom: 1.5rem;
-            border-bottom: 1px solid #eee;
-        }
-
-        .privacy-icon {
-            font-size: 3.5rem;
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-        }
-
-        .section-title {
-            color: var(--primary-color);
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--primary-light);
-            font-weight: 600;
-        }
-
-        .privacy-list {
-            padding-left: 1.5rem;
-        }
-
-        .privacy-list li {
-            margin-bottom: 0.8rem;
-            position: relative;
-        }
-
-        .privacy-list li:before {
-            content: "•";
-            color: var(--primary-color);
-            font-weight: bold;
-            display: inline-block;
-            width: 1em;
-            margin-left: -1em;
-        }
-
-        .contact-box {
-            background-color: var(--primary-light);
-            border-left: 4px solid var(--primary-color);
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin: 2rem 0;
-        }
-
-        .last-updated {
-            color: #777;
-            font-style: italic;
-            text-align: right;
-            margin-top: 2rem;
-            padding-top: 1rem;
-            border-top: 1px solid #eee;
-        }
-
-        .back-to-home {
-            margin-top: 2rem;
-            text-align: center;
-        }
-
-        .btn-primary {
-            background-color: var(--primary-color);
-            border-color: var(--primary-color);
-            padding: 0.5rem 1.5rem;
-            border-radius: 6px;
-        }
-
-        .btn-primary:hover {
-            background-color: #d45a42;
-            border-color: #d45a42;
-        }
-
-        h1 {
-            color: var(--dark-color);
-            font-weight: 700;
-        }
-
-        .lead {
-            color: #666;
-        }
-
-        @media (max-width: 768px) {
-            .privacy-container {
-                padding: 1.5rem;
-                margin: 1.5rem;
-            }
-
-            .privacy-icon {
-                font-size: 2.5rem;
-            }
-        }
-    </style>
-</head>
-
-<body>
+  
+<?php include 'header.php'; ?>
+      <div class="header-hero position-relative">
     <div class="container py-5">
         <div class="row align-items-center gy-3 ">
             <div class="col-lg-7">
@@ -165,6 +36,7 @@
             </div>
         </div>
     </div>
+      </div>
 
     <div class="bg-white pt-5">
         <div class="privacy-container">
@@ -228,16 +100,13 @@
             </div>
 
             <div class="back-to-home">
-                <a href="index.html" class="btn btn-primary">
-                    <i class="fas fa-arrow-left me-2"></i>Back to Home
+                <a href="index.html" class="btn btn-send text-white">
+                    <i class="fas fa-arrow-left me-2 text-white"></i>Back to Home
                 </a>
             </div>
         </div>
     </div>
 
-
+<?php include 'footer.php'; ?>
     <!-- Bootstrap JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>

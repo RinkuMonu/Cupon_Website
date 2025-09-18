@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="style.css" />
+  <?php include 'header.php'; ?>
+
+    <link rel="stylesheet" href="about.css" />
+
+     <div class="header-hero position-relative">
+        <div class="container">
+            <div class="row align-items-center gy-3">
+                <div class="col-lg-7">
+                    <div class="mb-2" style="font-size: 1.01em; color: #888">
+                        SEPTEMBER 2024
+                    </div>
+                    <h1 class="header-title">
+                        Shop more, spend less—your go-to hub for
+                        <br /><span class="highlight">verified coupons </span>and hot deals.
+                    </h1>
+                    <div class="hero-icons my-3">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="" />
+                        <img src="https://randomuser.me/api/portraits/men/49.jpg" alt="" />
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="" />
+                    </div>
+                    <p class="header-info">
+                       We help smart shoppers save more every day by bringing you the latest verified coupons, deals, and discounts from top brands and trusted stores.
+                    </p>
+                </div>
+                <div class="col-lg-5 text-center position-relative">
+                    <img src="banner.png" class="img-fluid hero-img-people" width="600" alt="Students" />
+                    <div class="hero-indicator">
+                        <div class="hero-indicator-inner">
+                            Last Updated<br />
+                            <span style="font-size: 1.13em; font-weight: 800">September 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<?php include 'footer.php'; ?>

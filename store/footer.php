@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Unique Coupon Page</title>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -164,9 +158,7 @@
       margin-top: 40px;
     }
   </style>
-</head>
 
-<body>
   <footer>
     <div class="container footer-content">
       <div class="row">
@@ -185,11 +177,11 @@
         <div class="col-lg-3 col-md-4 mb-5 mb-md-0">
           <h5>Quick Links</h5>
         <ul class="list-unstyled">
-  <li class="mb-1"><a href="#"><i class="bi bi-house-door-fill me-3 text-white"></i>Home</a></li>
-  <li class="mb-1"><a href="#"><i class="bi bi-info-circle-fill me-3 text-white"></i>About</a></li>
-  <li class="mb-1"><a href="#"><i class="bi bi-journal-text me-3 text-white"></i>Blog</a></li>
-  <li class="mb-1"><a href="#"><i class="bi bi-telephone-fill me-3 text-white"></i>Contact</a></li>
-  <li class="mb-1"><a href="#"><i class="bi bi-shield-lock-fill me-3 text-white"></i>Privacy Policy</a></li>
+  <li class="mb-1"><a href="/"><i class="bi bi-house-door-fill me-3 text-white"></i>Home</a></li>
+  <li class="mb-1"><a href="about.php"><i class="bi bi-info-circle-fill me-3 text-white"></i>About</a></li>
+  <li class="mb-1"><a href="blog.php"><i class="bi bi-journal-text me-3 text-white"></i>Blog</a></li>
+  <li class="mb-1"><a href="contact.php"><i class="bi bi-telephone-fill me-3 text-white"></i>Contact</a></li>
+  <li class="mb-1"><a href="privacy.php"><i class="bi bi-shield-lock-fill me-3 text-white"></i>Privacy Policy</a></li>
 </ul>
 
 
@@ -234,6 +226,4 @@
       backToTopButton.classList.toggle('visible', window.pageYOffset > 300);
     });
   </script>
-</body>
 
-</html>

@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css" />
 
     <style>
@@ -22,7 +12,7 @@
             border-radius: 12px;
             padding: 2.5rem;
             max-width: 950px;
-            margin: 0 auto 4rem;
+         
             box-shadow: 0 2px 20px rgba(0, 0, 0, 0.07);
         }
 
@@ -99,15 +89,10 @@
             font-size: 0.95rem;
         }
 
-        .btn-send{
-background-color: #ea6a4f !important;
-border-color: #ea6a4f !important;
-        }
+    
 
     </style>
-</head>
 
-<body>
 <?php include 'header.php'; ?>
      <div class="header-hero position-relative">
 <div class="container">
@@ -230,7 +215,6 @@ border-color: #ea6a4f !important;
             });
         });
     </script>
-</body>
+
 <?php include 'footer.php'; ?>
 
-</html>
