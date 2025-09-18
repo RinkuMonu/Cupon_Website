@@ -1,0 +1,228 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+    
+    body {
+      background: #f0f4f8;
+      font-family: 'Montserrat', sans-serif;
+      color: #333;
+    }
+    .container-main {
+      min-height: 100vh;
+      padding: 2rem 1.5rem 3rem;
+    }
+    .row.g-4 {
+      gap: 2.5rem;
+    }
+    /* Coupons List */
+    .coupon-list {
+      /* max-height: 85vh; */
+      overflow-y: auto;
+      padding-right: 20px;
+    }
+    .coupon-card {
+      background: linear-gradient(135deg, #fff, #e3f6f5);
+      border-radius: 16px;
+      box-shadow: 0 10px 20px rgb(0 0 0 / 0.05);
+      padding: 1.8rem 2.2rem;
+      margin-bottom: 1.8rem;
+      position: relative;
+      transition: all 0.35s ease;
+      cursor: pointer;
+      overflow: hidden;
+    }
+    .coupon-card:hover {
+      box-shadow: 0 14px 28px rgb(0 0 0 / 0.15);
+      transform: translateY(-5px);
+      background: linear-gradient(135deg, #cffafd, #b7f8ff);
+    }
+    .coupon-title {
+      font-weight: 700;
+      font-size: 1.4rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      color: #007a87;
+      margin-bottom: 0.3rem;
+      user-select: none;
+    }
+    /* Scissors SVG icon with gradient fill */
+    .scissors-icon {
+      width: 28px;
+      height: 28px;
+      fill: url(#scissorGradient);
+      flex-shrink: 0;
+    }
+    .coupon-desc {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 12px;
+      min-height: 48px;
+    }
+    .coupon-code {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 1.35rem;
+      padding: 0.65rem 1.8rem;
+      background: #ffe4e6;
+      border-radius: 48px;
+      border: 2.5px dashed #ef476f;
+      color: #ef476f;
+      width: fit-content;
+      user-select: all;
+      letter-spacing: 0.14em;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 8px rgb(239 71 111 / 0.15);
+    }
+    .coupon-code:hover {
+      background-color: #ef476f;
+      color: white;
+      box-shadow: 0 8px 15px rgb(239 71 111 / 0.32);
+      border-style: solid;
+    }
+    /* Copy Button */
+    .btn-copy {
+      position: absolute;
+      top: 2rem;
+      right: 2.2rem;
+      background: #ef476f;
+      border: none;
+      border-radius: 50px;
+      padding: 0.33rem 1rem;
+      color: white;
+      font-weight: 700;
+      font-size: 0.9rem;
+      cursor: pointer;
+      box-shadow: 0 6px 15px rgba(239,71,111,0.4);
+      transition: background-color 0.3s ease;
+      outline-offset: 4px;
+    }
+    .btn-copy:hover {
+      background-color: #c43758;
+      box-shadow: 0 8px 20px rgba(196,55,88,0.6);
+    }
+    /* Tooltip */
+    .tooltip-copy {
+      position: absolute;
+      right: 110%;
+      top: 45%;
+      transform: translateY(-50%);
+      background-color: #141414;
+      color: white;
+      padding: 6px 12px;
+      font-size: 0.75rem;
+      border-radius: 12px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+      white-space: nowrap;
+    }
+    .btn-copy.copied + .tooltip-copy {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    /* Filters */
+
+    .filters {
+      background: #fff;
+      border-radius: 18px;
+      padding: 2rem 2.4rem;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.06);
+      position: sticky;
+      top: 2.5rem;
+      /* max-height: 85vh; */
+      overflow-y: auto;
+      user-select: none;
+    }
+    .filters h4 {
+      font-weight: 800;
+      font-size: 1.5rem;
+      color: #007a87;
+      margin-bottom: 1.4rem;
+      border-bottom: 2px solid #ef476f;
+      padding-bottom: 0.3rem;
+    }
+    .filter-group {
+      margin-bottom: 1.8rem;
+    }
+    .filter-group h6 {
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: #374151;
+    }
+    .filter-checkbox label {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      font-weight: 600;
+      font-size: 1.05rem;
+      cursor: pointer;
+      color: #444444;
+      margin-bottom: 9px;
+      transition: color 0.25s ease;
+    }
+    .filter-checkbox input[type="checkbox"] {
+      accent-color: #ef476f;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+    .filter-checkbox label:hover {
+      color: #ef476f;
+    }
+    .filter-select {
+      width: 100%;
+      font-weight: 600;
+      color: #555;
+      border-radius: 8px;
+      height: 40px;
+      padding: 0 1rem;
+      border: 2px solid #ccc;
+      transition: border 0.3s ease;
+    }
+    .filter-select:focus {
+      border-color: #ef476f;
+      outline: none;
+    }
+    /* Reset Button */
+    .btn-reset {
+      background: #ef476f;
+      border: none;
+      border-radius: 50px;
+      width: 100%;
+      font-weight: 700;
+      color: white;
+      font-size: 1rem;
+      padding: 0.65rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .btn-reset:hover {
+      background-color: #c43758;
+    }
+    /* Scrollbar (Webkit) */
+    .coupon-list::-webkit-scrollbar {
+      width: 8px;
+    }
+    .coupon-list::-webkit-scrollbar-thumb {
+      background: #ef476f;
+      border-radius: 20px;
+    }
+    .coupon-list::-webkit-scrollbar-track {
+      background: #f0f4f8;
+    }
+
+    /* Responsive */
+    @media (max-width: 991.98px) {
+      .filters {
+        position: static;
+        max-height: none;
+        margin-bottom: 2.5rem;
+        padding: 1.8rem 1.6rem;
+      }
+      .coupon-list {
+        max-height: none;
+        padding-right: 0;
+      }
+      .container-main {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
