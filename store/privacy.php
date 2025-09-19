@@ -160,14 +160,14 @@
                   text-align: center;
               }
 
-              .header-hero .col-lg-7 {
+              /* .header-hero .col-lg-7 {
                   order: 2;
               }
 
               .header-hero .col-lg-5 {
                   order: 1;
                   margin-bottom: 1.5rem;
-              }
+              } */
 
               .sidebar-card {
                   position: static;
@@ -243,40 +243,40 @@
       </style>
   </head>
   <?php include 'header.php'; ?>
-  <div class="header-hero position-relative">
-      <div class="container py-5">
-          <div class="row align-items-center gy-3 ">
-              <div class="col-lg-7">
-                  <div class="mb-2" style="font-size: 1.01em; color: #888">
-                      SEPTEMBER 2024
-                  </div>
-                  <h1 class="header-title">
-                      Our <br /><span class="highlight">Privacy Policy</span>
-                  </h1>
-                  <div class="hero-icons my-3">
-                      <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Privacy Team" />
-                      <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="Privacy Team" />
-                      <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Privacy Team" />
-                  </div>
-                  <p class="header-info">
-                      Your trust matters to us. We are committed to protecting your personal data
-                      and ensuring transparency in how we collect, use, and safeguard your information.
-                      Please review our privacy policy to understand your rights and our practices.
-                  </p>
-              </div>
+<div class="header-hero position-relative">
+    <div class="container py-5">
+        <div class="row align-items-center gy-3 ">
+            <div class="col-lg-7">
+                <div class="mb-2" style="font-size: 1.01em; color: #888">
+                    SEPTEMBER 2024
+                </div>
+                <h1 class="header-title">
+                    Our <br /><span class="highlight">Privacy Policy</span>
+                </h1>
+                <div class="hero-icons my-3">
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Privacy Team" />
+                    <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="Privacy Team" />
+                    <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Privacy Team" />
+                </div>
+                <p class="header-info">
+                    Your trust matters to us. We are committed to protecting your personal data
+                    and ensuring transparency in how we collect, use, and safeguard your information.
+                    Please review our privacy policy to understand your rights and our practices.
+                </p>
+            </div>
 
-              <div class="col-lg-5 text-center position-relative">
-                  <img src="privacy.png" class="img-fluid hero-img-people" width="600" alt="Students" />
-                  <div class="hero-indicator">
-                      <div class="hero-indicator-inner">
-                          Last Updated<br />
-                          <span style="font-size: 1.13em; font-weight: 800">September 2024</span>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
+            <div class="col-lg-5 text-center position-relative">
+                <img src="privacy.png" class="img-fluid hero-img-people" width="600" alt="Students" />
+                <div class="hero-indicator">
+                    <div class="hero-indicator-inner">
+                        Last Updated<br />
+                        <span style="font-size: 1.13em; font-weight: 800">September 2024</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
   <div class="container py-5">
       <div class="row">
           <div class="col-lg-3">

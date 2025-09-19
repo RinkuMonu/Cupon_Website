@@ -227,7 +227,7 @@
                     SEPTEMBER 2024
                 </div>
                 <h1 class="header-title">
-                    Our <br /><span class="highlight">Privacy Policy</span>
+                    Our <br /><span class="highlight">Cookie Policy</span>
                 </h1>
                 <div class="hero-icons my-3">
                     <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Privacy Team" />
