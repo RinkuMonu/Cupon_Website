@@ -19,11 +19,11 @@
         <div class="collapse navbar-collapse ps-2 ps-md-0" id="navbarNav">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" href="/">Home</a>
+              <a class="nav-link active" href="index.php">Home</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="about.php">About</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="blog.php">Blog</a>
             </li>
