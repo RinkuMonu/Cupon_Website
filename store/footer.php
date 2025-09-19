@@ -210,7 +210,7 @@
       </div> -->
 
       <div class="footer-bottom text-center">
-        <p class="mb-0">&copy; 2025 MySite. All rights reserved. | <a href="#">Terms</a> | <a href="#">Privacy</a></p>
+        <p class="mb-0">&copy; <span id="years"></span> MySite. All rights reserved. | <a href="#">Terms</a> | <a href="#">Privacy</a></p>
       </div>
     </div>
 
@@ -218,7 +218,10 @@
       <i class="bi bi-arrow-up"></i>
     </a>
   </footer>
-
+  <script>
+  const currentYears = new Date().getFullYear();
+  document.getElementById("years").textContent = currentYears;
+</script>
   <script>
     // Back to top button
     const backToTopButton = document.querySelector('.back-to-top');

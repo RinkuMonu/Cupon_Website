@@ -34,7 +34,7 @@
                     <div class="hero-indicator">
                         <div class="hero-indicator-inner">
                             Last Updated<br />
-                            <span style="font-size: 1.13em; font-weight: 800">September 2024</span>
+                            <span style="font-size: 1.13em; font-weight: 800">September  <span id="year"></span> </span>
                         </div>
                     </div>
                 </div>
@@ -417,5 +417,9 @@
     </div>
   </div>
 </div>
+<script>
+  const currentYear = new Date().getFullYear();
+  document.getElementById("year").textContent = currentYear;
+</script>
 
 <?php include 'footer.php'; ?>
