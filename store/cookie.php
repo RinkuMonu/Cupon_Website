@@ -242,7 +242,7 @@
             </div>
 
             <div class="col-lg-5 text-center position-relative">
-                <img src="privacy.png" class="img-fluid hero-img-people" width="600" alt="Students" />
+                <img src="cookie.png" class="img-fluid hero-img-people" width="600" alt="Students" />
                 <div class="hero-indicator">
                     <div class="hero-indicator-inner">
                         Last Updated<br />
